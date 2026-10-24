@@ -53,7 +53,7 @@ public class Playlist {
             actual = actual.getSiguiente();
             System.out.println("Reproduciendo: " + actual.getDato().getTitulo());
         } else {
-            System.out.println("Ya estás en la última canción de la playlist.");
+            System.out.println("Se esta reproduciendo la ultima cancion de la playlist.");
         }
     }
 
@@ -62,17 +62,17 @@ public class Playlist {
             actual = actual.getAnterior();
             System.out.println("Reproduciendo: " + actual.getDato().getTitulo());
         } else {
-            System.out.println("Ya estás en la primera canción de la playlist.");
+            System.out.println("Se esta reproduciendo la primera canción de la playlist.");
         }
     }
 
     public void eliminarActual() {
         if (actual == null) {
-            System.out.println("No hay ninguna canción seleccionada para eliminar.");
+            System.out.println("No hay ninguna cancion seleccionada para eliminar.");
             return;
         }
 
-        System.out.println("Eliminando canción actual: " + actual.getDato().getTitulo());
+        System.out.println("Eliminando cancion actual: " + actual.getDato().getTitulo());
 
         if (actual == cabeza && actual == cola) {
             cabeza = null;

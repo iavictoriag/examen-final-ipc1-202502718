@@ -26,6 +26,6 @@ public class Cancion extends Multimedia {
     }
 
     public void setArtista(String artista) {
-        this.cantante = artista;
+        this.cantante = cantante;
     }
 }
